@@ -1,0 +1,144 @@
+/* Basic styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header */
+header {
+  background-color: #f0f0f0;
+  padding: 10px 0;
+}
+
+.logo {
+  float: left;
+}
+
+.logo img {
+  height: auto; /* Set logo height to fit proportionally */
+}
+
+nav {
+  float: right;
+}
+
+.menu-toggle {
+  display: none; /* Hide on larger screens */
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  text-align: center;
+  line-height: 40px;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-bottom: 5px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.menu a {
+  color: #333;
+}
+
+/* Responsive menu (for smaller screens) */
+@media (max-width: 768px) {
+  nav {
+    float: none;
+  }
+
+  .menu {
+    text-align: center;
+    display: block;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .menu li {
+    display: block;
+    margin: 10px auto;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Hero section */
+.hero {
+  background-image: url("new.png"); /* Replace with your hero image */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fff;
+  padding: 100px 0;
+ filter: brightness(100%);
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+/* About section */
+.about {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+}
+
+/* Products section */
+.products {
+  padding: 50px 0;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-card {
+  width: calc(33% - 20px); /* Adjust
